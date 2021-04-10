@@ -1,0 +1,168 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+
+ KULATE ROHY
+ border-radius: 30px;
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+:root {
+  --spacer: 30px;
+  --lightgray: #f5f5f5;
+  --darkgray: #959595;
+  --green: #06d7c1;
+  --orange: #f15f42;
+  --white: #ffffff;
+  --gradienttop: #06d7c1;
+  --gradientbottom: #50cc49;
+}
+
+
+body { 
+  text-rendering: optimizeLegibility;
+  background-color: var(--lightgray);
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+}
+
+.zbozi {
+  display: inline-flex;
+  max-width: 670px;
+  height: 440px;
+  margin: auto;
+}
+
+.vizual,
+.detaily {
+  width: 50%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacer);
+}
+
+
+.vizual {
+  background: linear-gradient(var(--gradienttop), var(--gradientbottom));
+}
+
+.detaily {
+  background-color: var(--white);
+}
+
+.slogan {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.cenovka {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.nazev {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+
+.produkt {
+  color: var(--darkgray);
+  margin-top: -5px;
+}
+
+.velikosti {
+  margin: 0px;
+  padding: 0px;
+}
+
+.velikosti li{
+  display: inline;
+  padding: 10px;
+}
+
+.velikosti li:hover {
+  color: var(--green);
+}
+
+.parametr {
+  text-transform: uppercase;
+  padding-top: var(--spacer);
+  border-top: 1px solid var(--green);
+}
+
+
+h2 {
+  font-size: 14px;
+  font-weight: 400 bold;
+}
+
+.akce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  max-width: 150px;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.akce:hover {
+  background-color: var(--darkgray);
+}
+
+.tlacitko {
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.tlacitko:hover {
+  color: var(--green);
+}
+
+.vybrana  {
+  color: var(--orange);
+  font-weight: bold;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+}
+
+.vybrana:hover {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
