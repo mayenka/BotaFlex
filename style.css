@@ -63,10 +63,15 @@ body {
 
 .vizual {
   background: linear-gradient(var(--gradienttop), var(--gradientbottom));
+  position: relative;
 }
 
 .detaily {
   background-color: var(--white);
+}
+
+.logo {
+  margin-bottom: 14px;
 }
 
 .slogan {
@@ -75,10 +80,15 @@ body {
   color: var(--white);
 }
 
+.bota {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 .cenovka {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  margin-top: auto;
+  align-self: flex-end;
 }
 
 .cena {
@@ -106,12 +116,15 @@ body {
 }
 
 .velikosti {
+  display: flex;
+  flex-direction: row;
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
 .velikosti li{
-  display: inline;
+  /*display: inline;*/
   padding: 10px;
 }
 
@@ -139,6 +152,7 @@ h2 {
   max-width: 150px;
   height: 3rem;
   border-radius: 10px;
+  margin-top: auto;
 }
 
 .akce:hover {
