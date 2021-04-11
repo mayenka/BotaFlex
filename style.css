@@ -64,20 +64,21 @@ body {
 .vizual {
   background: linear-gradient(var(--gradienttop), var(--gradientbottom));
   position: relative;
+  border-top-left-radius: var(--spacer);
+  border-bottom-left-radius: var(--spacer);
 }
 
 .detaily {
   background-color: var(--white);
-}
-
-.logo {
-  margin-bottom: 14px;
+  border-top-right-radius: var(--spacer);
+  border-bottom-right-radius: var(--spacer);
 }
 
 .slogan {
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
+  margin-top: var(--spacer);
 }
 
 .bota {
@@ -95,6 +96,7 @@ body {
   font-size: 28px;
   font-weight: 500;
   color: var(--white);
+  text-align: right;
 }
 
 .zaruka {
